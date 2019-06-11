@@ -63,4 +63,29 @@ class Game {
             return "-"
         }
     }
+    
+    func gameScore() -> String {
+        if self.player1.points < 4 && self.player2.points < 4 {
+            let firstPlayer = "\(self.player1.name) \(self.pointsToWords(points: self.player1.points))"
+            
+            let secondPlayer = "\(self.player2.name) \(self.pointsToWords(points: self.player2.points))"
+            
+            return "\(firstPlayer) - \(secondPlayer)"
+        }
+        return "Deuce"
+    }
+    func pointsToWords(points: Int) -> String{
+        switch points {
+        case 0:
+            return "Love"
+        case 1:
+            return "Fifteen"
+        case 2:
+            return "Thirty"
+        case 3:
+            return "Forty"
+        default:
+            return ""
+        }
+    }
 }

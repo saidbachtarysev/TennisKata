@@ -10,7 +10,8 @@ import UIKit
 
 class GameViewController: UIViewController {
     
-    @IBOutlet weak var gameScoreLabel: UIView!
+
+    @IBOutlet weak var gameScoreLabel: UILabel!
     @IBOutlet weak var player1ScoreLabel: UILabel!
     @IBOutlet weak var player2ScoreLabel: UILabel!
     
@@ -44,6 +45,7 @@ class GameViewController: UIViewController {
     func updateScore(){
         self.player1ScoreLabel.text = self.game.playerScore(playingPlayer: .player1)
         self.player2ScoreLabel.text = self.game.playerScore(playingPlayer: .player2)
+        self.gameScoreLabel.text = self.game.gameScore()
     }
     
 
