@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TennisKata
+ @testable import TennisKata
 
 class TennisKataTests: XCTestCase {
 
@@ -32,3 +32,4 @@ class TennisKataTests: XCTestCase {
     }
 
 }
+

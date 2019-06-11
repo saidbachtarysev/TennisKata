@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2CED439122AFDE7F003D928A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED439022AFDE7F003D928A /* AppDelegate.swift */; };
-		2CED439322AFDE7F003D928A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED439222AFDE7F003D928A /* ViewController.swift */; };
 		2CED439622AFDE7F003D928A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CED439422AFDE7F003D928A /* Main.storyboard */; };
 		2CED439822AFDE80003D928A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CED439722AFDE80003D928A /* Assets.xcassets */; };
 		2CED439B22AFDE80003D928A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CED439922AFDE80003D928A /* LaunchScreen.storyboard */; };
 		2CED43A622AFDE80003D928A /* TennisKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED43A522AFDE80003D928A /* TennisKataTests.swift */; };
 		2CED43B122AFDE80003D928A /* TennisKataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED43B022AFDE80003D928A /* TennisKataUITests.swift */; };
+		2CED43BF22AFE44A003D928A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED43BE22AFE44A003D928A /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		2CED438D22AFDE7F003D928A /* TennisKata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TennisKata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CED439022AFDE7F003D928A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CED439222AFDE7F003D928A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CED439522AFDE7F003D928A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CED439722AFDE80003D928A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CED439A22AFDE80003D928A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		2CED43AC22AFDE80003D928A /* TennisKataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisKataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CED43B022AFDE80003D928A /* TennisKataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisKataUITests.swift; sourceTree = "<group>"; };
 		2CED43B222AFDE80003D928A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CED43BE22AFE44A003D928A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				2CED439022AFDE7F003D928A /* AppDelegate.swift */,
-				2CED439222AFDE7F003D928A /* ViewController.swift */,
+				2CED43BE22AFE44A003D928A /* GameViewController.swift */,
 				2CED439422AFDE7F003D928A /* Main.storyboard */,
 				2CED439722AFDE80003D928A /* Assets.xcassets */,
 				2CED439922AFDE80003D928A /* LaunchScreen.storyboard */,
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CED439322AFDE7F003D928A /* ViewController.swift in Sources */,
+				2CED43BF22AFE44A003D928A /* GameViewController.swift in Sources */,
 				2CED439122AFDE7F003D928A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25S38SB8SB;
 				INFOPLIST_FILE = TennisKata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25S38SB8SB;
 				INFOPLIST_FILE = TennisKata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
