@@ -16,6 +16,8 @@
 		2CED43BF22AFE44A003D928A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED43BE22AFE44A003D928A /* GameViewController.swift */; };
 		2CED43C122AFEBBC003D928A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED43C022AFEBBC003D928A /* Player.swift */; };
 		2CED43C322B01EAC003D928A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED43C222B01EAC003D928A /* Game.swift */; };
+		2CED43C522B069AF003D928A /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED43C422B069AF003D928A /* GameTests.swift */; };
+		2CED43C722B069FE003D928A /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CED43C622B069FE003D928A /* PlayerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2CED43BE22AFE44A003D928A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2CED43C022AFEBBC003D928A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		2CED43C222B01EAC003D928A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		2CED43C422B069AF003D928A /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		2CED43C622B069FE003D928A /* PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				2CED43A522AFDE80003D928A /* TennisKataTests.swift */,
+				2CED43C622B069FE003D928A /* PlayerTests.swift */,
+				2CED43C422B069AF003D928A /* GameTests.swift */,
 				2CED43A722AFDE80003D928A /* Info.plist */,
 			);
 			path = TennisKataTests;
@@ -274,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CED43A622AFDE80003D928A /* TennisKataTests.swift in Sources */,
+				2CED43C722B069FE003D928A /* PlayerTests.swift in Sources */,
+				2CED43C522B069AF003D928A /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +486,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25S38SB8SB;
 				INFOPLIST_FILE = TennisKataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,6 +507,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25S38SB8SB;
 				INFOPLIST_FILE = TennisKataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,6 +527,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25S38SB8SB;
 				INFOPLIST_FILE = TennisKataUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -536,6 +547,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25S38SB8SB;
 				INFOPLIST_FILE = TennisKataUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
