@@ -72,6 +72,13 @@ class Game {
             
             return "\(firstPlayer) - \(secondPlayer)"
         }
+        
+        let pointsDifference = self.player1.points - self.player2.points
+        if pointsDifference != 0 {
+            let player = pointsDifference > 0 ? self.player1.name : self.player2.name
+            let score = pointsDifference >= 2 || pointsDifference <= -2 ? "Wins" : "Advantage"
+            return player + " " + score
+        }
         return "Deuce"
     }
     func pointsToWords(points: Int) -> String{
