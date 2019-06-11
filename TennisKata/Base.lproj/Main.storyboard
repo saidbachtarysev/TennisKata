@@ -33,6 +33,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="player1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UXV-3j-bj8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCp-7o-ePx">
                                 <rect key="frame" x="266" y="426" width="80" height="80"/>
@@ -49,6 +52,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="player2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ATU-8c-Gjb"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWr-hs-20B">
                                 <rect key="frame" x="85" y="223" width="59" height="21"/>
@@ -91,9 +97,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXl-HQ-udw">
                                 <rect key="frame" x="20" y="81" width="374" height="72"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1 love - Player 2 fifteen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnY-yZ-aZc">
-                                        <rect key="frame" x="0.0" y="26" width="374" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1  -  Player 2 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnY-yZ-aZc">
+                                        <rect key="frame" x="0.0" y="24.5" width="374" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="kle-t0-tAw"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -101,7 +109,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.22728488869863014" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="wnY-yZ-aZc" firstAttribute="centerY" secondItem="uXl-HQ-udw" secondAttribute="centerY" id="GwT-6f-hz2"/>
+                                    <constraint firstItem="wnY-yZ-aZc" firstAttribute="centerX" secondItem="uXl-HQ-udw" secondAttribute="centerX" id="oRo-7B-yUH"/>
+                                    <constraint firstAttribute="trailing" secondItem="wnY-yZ-aZc" secondAttribute="trailing" id="rr0-sJ-WFQ"/>
                                     <constraint firstAttribute="height" constant="72" id="wXo-Wd-maL"/>
+                                    <constraint firstItem="wnY-yZ-aZc" firstAttribute="leading" secondItem="uXl-HQ-udw" secondAttribute="leading" id="zOO-jq-w0p"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71K-hA-sGI">
@@ -138,6 +150,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="gameScoreLabel" destination="uXl-HQ-udw" id="m1f-st-3o7"/>
+                        <outlet property="player1ScoreLabel" destination="9Ue-e3-jsT" id="CLg-Jk-Xfa"/>
+                        <outlet property="player2ScoreLabel" destination="71K-hA-sGI" id="qdS-tf-fAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
